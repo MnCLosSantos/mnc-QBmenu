@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+:root {
+    --md-primary: #C9A66B;
+    --md-on-primary: #1c1c1c;
+    --md-primary-container: #7B1E1E;
+    --md-on-primary-container: #C9A66B;
+    --md-secondary: #5A1010;
+    --md-on-secondary: #ffffff;
+    --md-surface: #3B0B0B;
+    --md-on-surface: #FDEBD0;
+    --md-surface-container: #5A1010;
+    --md-surface-container-high: #7B1E1E;
+    --md-outline: rgba(201,166,107,0.4);
+    --font-primary: "Merriweather", serif;
+}
+
+* { font-family: var(--font-primary); }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: var(--md-primary); border-radius: 4px; }
+
+#container { position: absolute; top: 20%; right: 20%; }
+
+#buttons { max-height: 75vh; width: 300px; padding: 10px; overflow-y: auto; }
+
+.button, .title {
+    background: var(--md-surface-container);
+    color: var(--md-on-surface);
+    border: 1px solid var(--md-outline);
+    border-radius: 10px;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.button:hover {
+    background: var(--md-primary);
+    color: var(--md-on-primary);
+    box-shadow: 0 0 10px var(--md-primary), 0 6px 20px rgba(0,0,0,0.5);
+}
