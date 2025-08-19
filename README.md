@@ -1,6 +1,6 @@
 # mnc-QBmenu
-11 ui options for qb-menu
-
+## 11 ui options for qb-menu
+### To change ui simple replace contents of style.css with the contents of the one you like.
 
 
 - 1 basic/style-glass
