@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+
+:root {
+    --md-primary: #00F5FF;
+    --md-on-primary: #000000;
+    --md-primary-container: rgba(0,245,255,0.1);
+    --md-on-primary-container: #00F5FF;
+    --md-secondary: #0ff;
+    --md-on-secondary: #000;
+    --md-surface: rgba(10,10,20,0.85);
+    --md-on-surface: #e0faff;
+    --md-surface-container: rgba(15,15,25,0.5);
+    --md-surface-container-high: rgba(20,20,30,0.6);
+    --md-outline: rgba(0,245,255,0.3);
+    --font-primary: "Orbitron", sans-serif;
+}
+
+* { font-family: var(--font-primary); letter-spacing: 0.5px; }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: var(--md-primary); border-radius: 4px; }
+
+#container { position: absolute; top: 20%; right: 20%; }
+
+#buttons { max-height: 75vh; width: 300px; padding: 10px; overflow-y: auto; }
+
+.button, .title {
+    background: var(--md-surface-container);
+    color: var(--md-on-surface);
+    border: 1px solid var(--md-outline);
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(0,245,255,0.15);
+    box-shadow: 0 0 10px var(--md-primary), 0 0 20px var(--md-primary);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap");
+
+:root {
+    --md-primary: #D4AF37;
+    --md-on-primary: #0a0a0a;
+    --md-primary-container: #2B2F40;
+    --md-on-primary-container: #D4AF37;
+    --md-secondary: #9A7D0A;
+    --md-on-secondary: #ffffff;
+    --md-tertiary: #FFD700;
+    --md-on-tertiary: #000;
+    --md-surface: #1C1F2A;
+    --md-on-surface: #E6E6E6;
+    --md-surface-container: #242837;
+    --md-surface-container-high: #2E3447;
+    --md-outline: #D4AF3755;
+    --font-primary: "Playfair Display", serif;
+}
+
+* { margin: 0; padding: 0; font-family: var(--font-primary); }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: var(--md-primary); border-radius: 4px; }
+
+#container {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+#buttons {
+    max-height: 75vh;
+    width: 300px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.button, .title {
+    background: linear-gradient(135deg, #1C1F2A, #242837);
+    color: var(--md-on-surface);
+    border-radius: 10px;
+    border: 1px solid var(--md-outline);
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: var(--md-primary);
+    color: var(--md-on-primary);
+    box-shadow: 0 0 12px var(--md-primary), 0 6px 20px rgba(0,0,0,0.35);
+    transform: translateY(-2px);
+}
